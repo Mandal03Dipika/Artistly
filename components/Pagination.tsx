@@ -1,4 +1,14 @@
-const Pagination = ({ totalPages, setCurrentPage, currentPage }: any) => {
+interface PaginationProps {
+  totalPages: number;
+  setCurrentPage: (page: number) => void;
+  currentPage: number;
+}
+
+const Pagination = ({
+  totalPages,
+  setCurrentPage,
+  currentPage,
+}: PaginationProps) => {
   return (
     <>
       <div className="flex justify-center mt-6 space-x-2">

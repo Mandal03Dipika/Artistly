@@ -43,9 +43,9 @@ const ArtistsTable = ({
   currentArtists,
 }: ArtistsTableProps) => {
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
-  const [artistToDelete, setArtistToDelete] = useState<any | null>(null);
+  const [artistToDelete, setArtistToDelete] = useState<Artist | null>(null);
+  const [artistToEdit, setArtistToEdit] = useState<Artist | null>(null);
   const [showEditModal, setShowEditModal] = useState(false);
-  const [artistToEdit, setArtistToEdit] = useState<any | null>(null);
 
   return (
     <>

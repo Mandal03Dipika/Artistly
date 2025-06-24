@@ -21,6 +21,8 @@ export default function ArtistCard({ artist }: { artist: Artist }) {
           <Image
             src={artist.profileImage}
             alt={artist.name}
+            width={100}
+            height={100}
             className="object-cover w-full h-48 mb-3 rounded-xl"
           />
           <h3 className="text-lg font-semibold text-foreground">
