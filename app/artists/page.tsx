@@ -13,7 +13,6 @@ export default function ArtistsPage() {
   const searchParams = useSearchParams();
   const initialCategory = searchParams.get("category") || "";
   const updatedCategory = initialCategory.slice(0, -1);
-
   const [artists, setArtists] = useState<Artist[]>([]);
   const [category, setCategory] = useState(updatedCategory);
   const [location, setLocation] = useState("");

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Artist } from "@/types";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ArtistCard({ artist }: { artist: Artist }) {
   return (
@@ -17,7 +18,7 @@ export default function ArtistCard({ artist }: { artist: Artist }) {
     >
       <Card className="transition-all bg-white border shadow-sm dark:bg-zinc-900 border-border hover:shadow-md rounded-2xl">
         <CardContent className="flex flex-col gap-3 p-5">
-          <img
+          <Image
             src={artist.profileImage}
             alt={artist.name}
             className="object-cover w-full h-48 mb-3 rounded-xl"

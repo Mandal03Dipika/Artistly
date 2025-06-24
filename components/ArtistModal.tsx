@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { Artist } from "@/types";
+import Image from "next/image";
 
 interface ArtistModalProps {
   setSelectedArtist: (artist: null) => void;
@@ -57,14 +58,19 @@ const ArtistModal = ({
                     className="flex flex-col items-center gap-3 mt-6 text-sm"
                   >
                     {selectedArtist.profileImage && (
-                      <motion.img
-                        src={selectedArtist.profileImage}
-                        alt={selectedArtist.name}
-                        className="object-cover w-24 h-24 border rounded-full"
+                      <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.3 }}
-                      />
+                      >
+                        <Image
+                          src={selectedArtist.profileImage}
+                          alt={selectedArtist.name}
+                          width={96}
+                          height={96}
+                          className="object-cover w-24 h-24 border rounded-full"
+                        />
+                      </motion.div>
                     )}
                     <div className="space-y-1 text-center">
                       <p>

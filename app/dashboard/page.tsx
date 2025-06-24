@@ -15,16 +15,7 @@ import {
 } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion, AnimatePresence } from "framer-motion";
-
-interface Artist {
-  id: number;
-  name: string;
-  category: string[];
-  location: string;
-  feeRange: string;
-  profileImage: string;
-  bio: string;
-}
+import { Artist } from "@/types";
 
 export default function DashboardPage() {
   const [artists, setArtists] = useState<Artist[]>([]);

@@ -3,7 +3,7 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TextInput from "@/components/forms/TextInput";
 import TextArea from "@/components/forms/TextArea";
 import CheckBoxGroup from "@/components/forms/CheckBoxGroup";
@@ -49,6 +49,9 @@ export default function OnboardingForm() {
 
   const [submitted, setSubmitted] = useState(false);
   const { categoryOptions, languageOptions, feeOptions } = useOptions();
+
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => setIsClient(true), []);
 
   const onSubmit = (data: FormData) => {
     console.log("Submitted data:", data);
@@ -104,6 +107,8 @@ export default function OnboardingForm() {
     },
   ];
 
+  if (!isClient) return null; // Prevent SSR mismatch
+
   return (
     <motion.div
       className="flex justify-center px-4 py-10"
@@ -125,11 +130,7 @@ export default function OnboardingForm() {
             animate="visible"
             variants={{
               hidden: {},
-              visible: {
-                transition: {
-                  staggerChildren: 0.1,
-                },
-              },
+              visible: { transition: { staggerChildren: 0.1 } },
             }}
           >
             {formConfig.map(({ component: Component, ...field }) => (
@@ -149,6 +150,7 @@ export default function OnboardingForm() {
                 />
               </motion.div>
             ))}
+
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: 10 },
@@ -165,6 +167,7 @@ export default function OnboardingForm() {
                 className="cursor-pointer file:mr-4 file:rounded-md file:border-0 file:bg-purple-600 file:px-4 file:py-2 file:text-sm file:font-medium file:text-white hover:file:bg-purple-700 dark:file:bg-purple-700 dark:hover:file:bg-purple-600"
               />
             </motion.div>
+
             <motion.div
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -180,6 +183,7 @@ export default function OnboardingForm() {
                 Submit
               </Button>
             </motion.div>
+
             {submitted && (
               <motion.p
                 initial={{ opacity: 0 }}
