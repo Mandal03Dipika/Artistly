@@ -1,0 +1,824 @@
+{
+  "artists": [
+    {
+      "id": "a1",
+      "name": "Veronica Rhodes",
+      "category": ["DJ"],
+      "languages": ["English"],
+      "feeRange": "$$$",
+      "location": "London",
+      "profileImage": "/images/artists/1.jpeg",
+      "bio": "Veronica Rhodes is a talented performer known for captivating dj shows across London and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a2",
+      "name": "Heather Johnson",
+      "category": ["Speaker", "DJ"],
+      "languages": ["Hindi"],
+      "feeRange": "$$",
+      "location": "Berlin",
+      "profileImage": "/images/artists/2.jpeg",
+      "bio": "Heather Johnson is a talented performer known for captivating speaker, dj shows across Berlin and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a3",
+      "name": "Nicholas Thomas",
+      "category": ["Dancer", "Magician"],
+      "languages": ["Spanish", "Mandarin", "English"],
+      "feeRange": "$",
+      "location": "London",
+      "profileImage": "/images/artists/3.jpeg",
+      "bio": "Nicholas Thomas is a talented performer known for captivating dancer, magician shows across London and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a4",
+      "name": "William Brown",
+      "category": ["Dancer"],
+      "languages": ["Hindi"],
+      "feeRange": "$$$",
+      "location": "New York",
+      "profileImage": "/images/artists/4.png",
+      "bio": "William Brown is a talented performer known for captivating dancer shows across New York and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a5",
+      "name": "Rebecca Coleman",
+      "category": ["DJ", "Magician"],
+      "languages": ["Hindi", "French"],
+      "feeRange": "$$",
+      "location": "Mumbai",
+      "profileImage": "/images/artists/5.jpeg",
+      "bio": "Rebecca Coleman is a talented performer known for captivating dj, magician shows across Mumbai and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a6",
+      "name": "Anthony Kennedy",
+      "category": ["Magician"],
+      "languages": ["French"],
+      "feeRange": "$",
+      "location": "Toronto",
+      "profileImage": "/images/artists/6.png",
+      "bio": "Anthony Kennedy is a talented performer known for captivating magician shows across Toronto and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a7",
+      "name": "Chelsea Williams",
+      "category": ["Dancer", "DJ"],
+      "languages": ["Swahili", "English", "Mandarin"],
+      "feeRange": "$",
+      "location": "Toronto",
+      "profileImage": "/images/artists/7.jpeg",
+      "bio": "Chelsea Williams is a talented performer known for captivating dancer, dj shows across Toronto and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a8",
+      "name": "Loretta Torres",
+      "category": ["Comedian"],
+      "languages": ["French", "Mandarin"],
+      "feeRange": "$$",
+      "location": "London",
+      "profileImage": "/images/artists/8.png",
+      "bio": "Loretta Torres is a talented performer known for captivating comedian shows across London and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a9",
+      "name": "Cindy Parker",
+      "category": ["Singer"],
+      "languages": ["English"],
+      "feeRange": "$$$",
+      "location": "Nairobi",
+      "profileImage": "/images/artists/9.png",
+      "bio": "Cindy Parker is a talented performer known for captivating singer shows across Nairobi and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a10",
+      "name": "Leah Valenzuela",
+      "category": ["Dancer", "Magician"],
+      "languages": ["Swahili", "Spanish"],
+      "feeRange": "$$$",
+      "location": "Mumbai",
+      "profileImage": "/images/artists/10.png",
+      "bio": "Leah Valenzuela is a talented performer known for captivating dancer, magician shows across Mumbai and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a11",
+      "name": "Maxwell Diaz",
+      "category": ["Dancer"],
+      "languages": ["Mandarin", "Spanish"],
+      "feeRange": "$$$",
+      "location": "London",
+      "profileImage": "/images/artists/11.png",
+      "bio": "Maxwell Diaz is a talented performer known for captivating dancer shows across London and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a12",
+      "name": "Carol Jones",
+      "category": ["DJ"],
+      "languages": ["Mandarin"],
+      "feeRange": "$",
+      "location": "Paris",
+      "profileImage": "/images/artists/12.jpeg",
+      "bio": "Carol Jones is a talented performer known for captivating dj shows across Paris and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a13",
+      "name": "Daryl Jackson",
+      "category": ["Singer", "DJ"],
+      "languages": ["Mandarin", "Swahili"],
+      "feeRange": "$",
+      "location": "Berlin",
+      "profileImage": "/images/artists/13.png",
+      "bio": "Daryl Jackson is a talented performer known for captivating singer, dj shows across Berlin and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a14",
+      "name": "Nicole Shah",
+      "category": ["DJ", "Comedian"],
+      "languages": ["Swahili", "Hindi", "English"],
+      "feeRange": "$$$",
+      "location": "Berlin",
+      "profileImage": "/images/artists/14.jpeg",
+      "bio": "Nicole Shah is a talented performer known for captivating dj, comedian shows across Berlin and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a15",
+      "name": "Kelsey Jackson",
+      "category": ["Magician"],
+      "languages": ["French", "Swahili"],
+      "feeRange": "$",
+      "location": "Mumbai",
+      "profileImage": "/images/artists/15.png",
+      "bio": "Kelsey Jackson is a talented performer known for captivating magician shows across Mumbai and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a16",
+      "name": "Jeffrey Collins",
+      "category": ["Comedian"],
+      "languages": ["Hindi", "Mandarin", "Spanish"],
+      "feeRange": "$$$",
+      "location": "Los Angeles",
+      "profileImage": "/images/artists/16.jpeg",
+      "bio": "Jeffrey Collins is a talented performer known for captivating comedian shows across Los Angeles and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a17",
+      "name": "James Douglas",
+      "category": ["Comedian", "DJ"],
+      "languages": ["Spanish", "Mandarin", "Swahili"],
+      "feeRange": "$$$",
+      "location": "Sydney",
+      "profileImage": "/images/artists/17.jpeg",
+      "bio": "James Douglas is a talented performer known for captivating comedian, dj shows across Sydney and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a18",
+      "name": "Susan Gibson",
+      "category": ["Comedian"],
+      "languages": ["Hindi", "Swahili"],
+      "feeRange": "$",
+      "location": "Paris",
+      "profileImage": "/images/artists/18.jpeg",
+      "bio": "Susan Gibson is a talented performer known for captivating comedian shows across Paris and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a19",
+      "name": "Ann Ramirez",
+      "category": ["Magician"],
+      "languages": ["French", "Spanish"],
+      "feeRange": "$",
+      "location": "Mumbai",
+      "profileImage": "/images/artists/19.jpeg",
+      "bio": "Ann Ramirez is a talented performer known for captivating magician shows across Mumbai and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a20",
+      "name": "Teresa Moyer",
+      "category": ["Comedian", "DJ"],
+      "languages": ["French", "English"],
+      "feeRange": "$$$",
+      "location": "Los Angeles",
+      "profileImage": "/images/artists/20.png",
+      "bio": "Teresa Moyer is a talented performer known for captivating comedian, dj shows across Los Angeles and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a21",
+      "name": "Anthony Williams",
+      "category": ["Dancer"],
+      "languages": ["English", "Swahili", "Mandarin"],
+      "feeRange": "$$$",
+      "location": "Los Angeles",
+      "profileImage": "/images/artists/21.jpeg",
+      "bio": "Anthony Williams is a talented performer known for captivating dancer shows across Los Angeles and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a22",
+      "name": "Margaret Freeman",
+      "category": ["Speaker"],
+      "languages": ["Mandarin", "English", "Swahili"],
+      "feeRange": "$",
+      "location": "London",
+      "profileImage": "/images/artists/22.jpeg",
+      "bio": "Margaret Freeman is a talented performer known for captivating speaker shows across London and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a23",
+      "name": "Alan Ewing",
+      "category": ["Singer", "DJ"],
+      "languages": ["English", "Mandarin", "Spanish"],
+      "feeRange": "$$",
+      "location": "Mumbai",
+      "profileImage": "/images/artists/23.jpeg",
+      "bio": "Alan Ewing is a talented performer known for captivating singer, dj shows across Mumbai and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a24",
+      "name": "Jamie Davis",
+      "category": ["Dancer", "Magician"],
+      "languages": ["Swahili"],
+      "feeRange": "$$",
+      "location": "Mumbai",
+      "profileImage": "/images/artists/24.jpeg",
+      "bio": "Jamie Davis is a talented performer known for captivating dancer, magician shows across Mumbai and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a25",
+      "name": "Joshua Duffy",
+      "category": ["DJ"],
+      "languages": ["English", "Swahili", "Mandarin"],
+      "feeRange": "$$$",
+      "location": "Tokyo",
+      "profileImage": "/images/artists/25.png",
+      "bio": "Joshua Duffy is a talented performer known for captivating dj shows across Tokyo and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a26",
+      "name": "Mario Stone",
+      "category": ["Magician"],
+      "languages": ["Swahili", "French"],
+      "feeRange": "$$",
+      "location": "Tokyo",
+      "profileImage": "/images/artists/26.png",
+      "bio": "Mario Stone is a talented performer known for captivating magician shows across Tokyo and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a27",
+      "name": "Hannah Lee",
+      "category": ["DJ"],
+      "languages": ["English", "Swahili"],
+      "feeRange": "$$",
+      "location": "Tokyo",
+      "profileImage": "/images/artists/27.jpg",
+      "bio": "Hannah Lee is a talented performer known for captivating dj shows across Tokyo and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a28",
+      "name": "Sheila Waters",
+      "category": ["Comedian", "Magician"],
+      "languages": ["English", "Mandarin"],
+      "feeRange": "$$$",
+      "location": "Berlin",
+      "profileImage": "/images/artists/28.jpg",
+      "bio": "Sheila Waters is a talented performer known for captivating comedian, magician shows across Berlin and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a29",
+      "name": "Raymond Howard",
+      "category": ["DJ", "Speaker"],
+      "languages": ["Mandarin", "Spanish", "Swahili"],
+      "feeRange": "$$$",
+      "location": "Paris",
+      "profileImage": "/images/artists/29.jpg",
+      "bio": "Raymond Howard is a talented performer known for captivating dj, speaker shows across Paris and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a30",
+      "name": "Lisa Jones",
+      "category": ["Singer", "Magician"],
+      "languages": ["Hindi", "Swahili", "Mandarin"],
+      "feeRange": "$$$",
+      "location": "Tokyo",
+      "profileImage": "/images/artists/30.jpg",
+      "bio": "Lisa Jones is a talented performer known for captivating singer, magician shows across Tokyo and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a31",
+      "name": "Jillian Mccoy",
+      "category": ["Dancer", "Singer"],
+      "languages": ["Hindi", "Mandarin"],
+      "feeRange": "$",
+      "location": "Toronto",
+      "profileImage": "/images/artists/31.jpg",
+      "bio": "Jillian Mccoy is a talented performer known for captivating dancer, singer shows across Toronto and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a32",
+      "name": "Maria Guerrero",
+      "category": ["Singer"],
+      "languages": ["Hindi", "Spanish", "French"],
+      "feeRange": "$$",
+      "location": "Paris",
+      "profileImage": "/images/artists/32.jpg",
+      "bio": "Maria Guerrero is a talented performer known for captivating singer shows across Paris and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a33",
+      "name": "Robin Roberts",
+      "category": ["Dancer", "DJ"],
+      "languages": ["French", "English"],
+      "feeRange": "$$$",
+      "location": "Toronto",
+      "profileImage": "/images/artists/33.jpg",
+      "bio": "Robin Roberts is a talented performer known for captivating dancer, dj shows across Toronto and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a34",
+      "name": "Mackenzie Dickson",
+      "category": ["Singer", "DJ"],
+      "languages": ["Mandarin"],
+      "feeRange": "$$$",
+      "location": "Paris",
+      "profileImage": "/images/artists/34.jpg",
+      "bio": "Mackenzie Dickson is a talented performer known for captivating singer, dj shows across Paris and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a35",
+      "name": "Jennifer Blankenship",
+      "category": ["DJ", "Comedian"],
+      "languages": ["English"],
+      "feeRange": "$",
+      "location": "New York",
+      "profileImage": "/images/artists/35.jpg",
+      "bio": "Jennifer Blankenship is a talented performer known for captivating dj, comedian shows across New York and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a36",
+      "name": "Linda Cook",
+      "category": ["Dancer"],
+      "languages": ["Swahili", "Hindi", "Mandarin"],
+      "feeRange": "$",
+      "location": "Mumbai",
+      "profileImage": "/images/artists/36.jpg",
+      "bio": "Linda Cook is a talented performer known for captivating dancer shows across Mumbai and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a37",
+      "name": "Mark Martinez",
+      "category": ["Dancer"],
+      "languages": ["Hindi", "Spanish", "English"],
+      "feeRange": "$$",
+      "location": "Tokyo",
+      "profileImage": "/images/artists/37.jpg",
+      "bio": "Mark Martinez is a talented performer known for captivating dancer shows across Tokyo and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a38",
+      "name": "Douglas Adams",
+      "category": ["Magician"],
+      "languages": ["Hindi", "Spanish"],
+      "feeRange": "$",
+      "location": "London",
+      "profileImage": "/images/artists/38.jpg",
+      "bio": "Douglas Adams is a talented performer known for captivating magician shows across London and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a39",
+      "name": "Phillip Berg",
+      "category": ["Speaker"],
+      "languages": ["Swahili", "Mandarin"],
+      "feeRange": "$$",
+      "location": "Los Angeles",
+      "profileImage": "/images/artists/39.jpg",
+      "bio": "Phillip Berg is a talented performer known for captivating speaker shows across Los Angeles and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a40",
+      "name": "Christopher Sawyer",
+      "category": ["DJ", "Magician"],
+      "languages": ["English", "Swahili", "Hindi"],
+      "feeRange": "$$$",
+      "location": "Toronto",
+      "profileImage": "/images/artists/40.jpg",
+      "bio": "Christopher Sawyer is a talented performer known for captivating dj, magician shows across Toronto and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a41",
+      "name": "Valerie Barr",
+      "category": ["Comedian"],
+      "languages": ["English"],
+      "feeRange": "$",
+      "location": "New York",
+      "profileImage": "/images/artists/41.jpg",
+      "bio": "Valerie Barr is a talented performer known for captivating comedian shows across New York and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a42",
+      "name": "Isabel Gutierrez",
+      "category": ["DJ"],
+      "languages": ["Hindi"],
+      "feeRange": "$",
+      "location": "Berlin",
+      "profileImage": "/images/artists/42.jpg",
+      "bio": "Isabel Gutierrez is a talented performer known for captivating dj shows across Berlin and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a43",
+      "name": "Barbara Green",
+      "category": ["Singer"],
+      "languages": ["French"],
+      "feeRange": "$$$",
+      "location": "Mumbai",
+      "profileImage": "/images/artists/43.png",
+      "bio": "Barbara Green is a talented performer known for captivating singer shows across Mumbai and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a44",
+      "name": "Cindy Miller",
+      "category": ["Dancer"],
+      "languages": ["Swahili", "French", "Spanish"],
+      "feeRange": "$",
+      "location": "London",
+      "profileImage": "/images/artists/44.jpg",
+      "bio": "Cindy Miller is a talented performer known for captivating dancer shows across London and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a45",
+      "name": "Dale Burke",
+      "category": ["Dancer", "Speaker"],
+      "languages": ["Hindi", "Spanish"],
+      "feeRange": "$",
+      "location": "London",
+      "profileImage": "/images/artists/45.jpg",
+      "bio": "Dale Burke is a talented performer known for captivating dancer, speaker shows across London and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a46",
+      "name": "Kelly Wilson",
+      "category": ["Dancer", "Magician"],
+      "languages": ["French"],
+      "feeRange": "$$$",
+      "location": "Sydney",
+      "profileImage": "/images/artists/46.jpg",
+      "bio": "Kelly Wilson is a talented performer known for captivating dancer, magician shows across Sydney and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a47",
+      "name": "Gabriel Miller",
+      "category": ["Magician"],
+      "languages": ["French", "Spanish", "Swahili"],
+      "feeRange": "$",
+      "location": "New York",
+      "profileImage": "/images/artists/47.jpg",
+      "bio": "Gabriel Miller is a talented performer known for captivating magician shows across New York and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a48",
+      "name": "Chelsea Cook",
+      "category": ["Magician", "Dancer"],
+      "languages": ["English", "Hindi", "Mandarin"],
+      "feeRange": "$$$",
+      "location": "Paris",
+      "profileImage": "/images/artists/48.png",
+      "bio": "Chelsea Cook is a talented performer known for captivating magician, dancer shows across Paris and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a49",
+      "name": "Thomas Thompson",
+      "category": ["Magician", "Speaker"],
+      "languages": ["Spanish"],
+      "feeRange": "$",
+      "location": "New York",
+      "profileImage": "/images/artists/49.jpg",
+      "bio": "Thomas Thompson is a talented performer known for captivating magician, speaker shows across New York and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    },
+    {
+      "id": "a50",
+      "name": "Evelyn Williams",
+      "category": ["Speaker"],
+      "languages": ["Swahili", "Mandarin", "English"],
+      "feeRange": "$$$",
+      "location": "Paris",
+      "profileImage": "/images/artists/50.jpg",
+      "bio": "Evelyn Williams is a talented performer known for captivating speaker shows across Paris and beyond. With diverse language skills and engaging presence, they elevate every event they perform at."
+    }
+  ],
+  "categories": [
+    { "id": "c1", "name": "Singers", "icon": "/images/singer_icon1.png" },
+    { "id": "c2", "name": "Dancers", "icon": "/images/dancer_icon1.png" },
+    { "id": "c3", "name": "Speakers", "icon": "/images/speaker_icon.png" },
+    { "id": "c4", "name": "DJs", "icon": "/images/dj_icon.png" }
+  ],
+  "feeRanges": [{ "id": "$" }, { "id": "$$" }, { "id": "$$$" }],
+  "languages": [
+    { "id": "English" },
+    { "id": "Hindi" },
+    { "id": "Spanish" },
+    { "id": "French" },
+    { "id": "Swahili" },
+    { "id": "Mandarin" }
+  ],
+  "bookings": [
+    {
+      "id": "b1",
+      "artistId": "a1",
+      "eventPlanner": "Nicholson-Griffin",
+      "eventDate": "2025-07-19",
+      "location": "Paris",
+      "message": "Business production though sea owner from.",
+      "status": "Rejected"
+    },
+    {
+      "id": "b5",
+      "artistId": "a5",
+      "eventPlanner": "Howard-Cole",
+      "eventDate": "2025-06-27",
+      "location": "Nairobi",
+      "message": "Pass teach admit nothing subject yet watch agreement fire partner strong.",
+      "status": "Pending"
+    },
+    {
+      "id": "b6",
+      "artistId": "a6",
+      "eventPlanner": "Clark, Williams and Carpenter",
+      "eventDate": "2025-08-23",
+      "location": "London",
+      "message": "Year trip choice alone lose animal line start bit against television she employee.",
+      "status": "Accepted"
+    },
+    {
+      "id": "b7",
+      "artistId": "a7",
+      "eventPlanner": "Lawrence Group",
+      "eventDate": "2025-09-13",
+      "location": "Paris",
+      "message": "Third bed affect pull feeling power computer along risk throughout century alone.",
+      "status": "Accepted"
+    },
+    {
+      "id": "b8",
+      "artistId": "a8",
+      "eventPlanner": "Barajas PLC",
+      "eventDate": "2025-08-01",
+      "location": "Mumbai",
+      "message": "Everyone ball doctor check name top.",
+      "status": "Rejected"
+    },
+    {
+      "id": "b9",
+      "artistId": "a9",
+      "eventPlanner": "Price-Young",
+      "eventDate": "2025-08-22",
+      "location": "Paris",
+      "message": "Than heavy eat interest eat field group woman morning.",
+      "status": "Pending"
+    },
+    {
+      "id": "b10",
+      "artistId": "a10",
+      "eventPlanner": "Duncan-Hamilton",
+      "eventDate": "2025-08-30",
+      "location": "Nairobi",
+      "message": "List play sign several TV federal amount until new doctor table seek fly.",
+      "status": "Accepted"
+    },
+    {
+      "id": "b19",
+      "artistId": "a19",
+      "eventPlanner": "Mendoza, Jackson and Salinas",
+      "eventDate": "2025-06-30",
+      "location": "New York",
+      "message": "Station throw tree hold rise place body read.",
+      "status": "Rejected"
+    },
+    {
+      "id": "b24",
+      "artistId": "a24",
+      "eventPlanner": "Johnson-Green",
+      "eventDate": "2025-08-30",
+      "location": "New York",
+      "message": "Ability drop fine something rest gun paper find.",
+      "status": "Rejected"
+    },
+    {
+      "id": "b25",
+      "artistId": "a25",
+      "eventPlanner": "Wiggins and Sons",
+      "eventDate": "2025-08-05",
+      "location": "Toronto",
+      "message": "Single business part scene itself energy kid or program our dream collection along.",
+      "status": "Rejected"
+    },
+    {
+      "id": "b26",
+      "artistId": "a26",
+      "eventPlanner": "Gomez-Pacheco",
+      "eventDate": "2025-09-01",
+      "location": "Paris",
+      "message": "Subject again act scientist street draw anyone Mr.",
+      "status": "Pending"
+    },
+    {
+      "id": "b27",
+      "artistId": "a27",
+      "eventPlanner": "Vance-Hopkins",
+      "eventDate": "2025-07-15",
+      "location": "Toronto",
+      "message": "Buy lead tend site over save letter coach when before three vote across.",
+      "status": "Accepted"
+    },
+    {
+      "id": "b29",
+      "artistId": "a29",
+      "eventPlanner": "Harris LLC",
+      "eventDate": "2025-07-19",
+      "location": "Los Angeles",
+      "message": "Full option treat real technology blood discussion question six staff.",
+      "status": "Accepted"
+    },
+    {
+      "id": "b34",
+      "artistId": "a34",
+      "eventPlanner": "Brown Inc",
+      "eventDate": "2025-08-24",
+      "location": "Mumbai",
+      "message": "Very nothing able address better letter entire.",
+      "status": "Rejected"
+    },
+    {
+      "id": "b37",
+      "artistId": "a37",
+      "eventPlanner": "Martinez-Berry",
+      "eventDate": "2025-08-23",
+      "location": "Sydney",
+      "message": "Civil floor nor available deep increase goal here last.",
+      "status": "Accepted"
+    },
+    {
+      "id": "b40",
+      "artistId": "a40",
+      "eventPlanner": "Porter, Liu and Johnson",
+      "eventDate": "2025-07-19",
+      "location": "Los Angeles",
+      "message": "Reveal second drug factor decision now take every.",
+      "status": "Accepted"
+    },
+    {
+      "id": "b41",
+      "artistId": "a41",
+      "eventPlanner": "Gutierrez, Miller and Mejia",
+      "eventDate": "2025-08-09",
+      "location": "Nairobi",
+      "message": "Mention tax blue else cover hand feel require cost heart current family.",
+      "status": "Rejected"
+    },
+    {
+      "id": "b42",
+      "artistId": "a42",
+      "eventPlanner": "Ray, Brooks and Hurley",
+      "eventDate": "2025-08-31",
+      "location": "Toronto",
+      "message": "Admit yourself effect ground hear reach.",
+      "status": "Rejected"
+    },
+    {
+      "id": "b43",
+      "artistId": "a43",
+      "eventPlanner": "Davis Group",
+      "eventDate": "2025-07-12",
+      "location": "Berlin",
+      "message": "Outside according message safe her small unit shoulder could ago prevent official.",
+      "status": "Pending"
+    },
+    {
+      "id": "b44",
+      "artistId": "a44",
+      "eventPlanner": "Hernandez-Richards",
+      "eventDate": "2025-07-24",
+      "location": "Mumbai",
+      "message": "Leave money meet thought management seat condition kind view yourself design American ready.",
+      "status": "Pending"
+    },
+    {
+      "id": "b47",
+      "artistId": "a47",
+      "eventPlanner": "Flores Group",
+      "eventDate": "2025-08-23",
+      "location": "Toronto",
+      "message": "Capital idea fall buy action strategy his home seven thousand financial.",
+      "status": "Pending"
+    },
+    {
+      "id": "b48",
+      "artistId": "a48",
+      "eventPlanner": "Miller Inc",
+      "eventDate": "2025-09-11",
+      "location": "Toronto",
+      "message": "Anyone run piece experience center two conference with newspaper prevent.",
+      "status": "Pending"
+    },
+    {
+      "id": "b49",
+      "artistId": "a49",
+      "eventPlanner": "Taylor, Stone and Wall",
+      "eventDate": "2025-07-19",
+      "location": "Mumbai",
+      "message": "Let those few eat wind second trip war.",
+      "status": "Rejected"
+    },
+    {
+      "id": "b50",
+      "artistId": "a50",
+      "eventPlanner": "Williams-Campbell",
+      "eventDate": "2025-07-14",
+      "location": "Los Angeles",
+      "message": "Month shake when lead soldier allow possible run hear wind.",
+      "status": "Pending"
+    }
+  ],
+  "managers": [
+    {
+      "id": "m1",
+      "name": "Mariah Collins",
+      "email": "emily57@yahoo.com",
+      "managedArtists": [
+        "a39",
+        "a5",
+        "a23",
+        "a15",
+        "a44",
+        "a25",
+        "a50",
+        "a21",
+        "a47",
+        "a42"
+      ]
+    },
+    {
+      "id": "m2",
+      "name": "Micheal Dougherty",
+      "email": "eparker@hernandez.com",
+      "managedArtists": [
+        "a8",
+        "a50",
+        "a38",
+        "a23",
+        "a49",
+        "a12",
+        "a46",
+        "a35",
+        "a41",
+        "a28"
+      ]
+    },
+    {
+      "id": "m3",
+      "name": "Janice Jones",
+      "email": "smithcynthia@welch.com",
+      "managedArtists": [
+        "a16",
+        "a34",
+        "a15",
+        "a26",
+        "a47",
+        "a9",
+        "a13",
+        "a20",
+        "a40",
+        "a37"
+      ]
+    },
+    {
+      "id": "m4",
+      "name": "Christopher Green",
+      "email": "hopkinsashley@gmail.com",
+      "managedArtists": [
+        "a16",
+        "a50",
+        "a18",
+        "a22",
+        "a13",
+        "a46",
+        "a11",
+        "a38",
+        "a9",
+        "a8"
+      ]
+    },
+    {
+      "id": "m5",
+      "name": "Kevin Burns",
+      "email": "tanya80@williams.net",
+      "managedArtists": [
+        "a42",
+        "a14",
+        "a48",
+        "a22",
+        "a37",
+        "a38",
+        "a46",
+        "a27",
+        "a34",
+        "a19"
+      ]
+    }
+  ]
+}
