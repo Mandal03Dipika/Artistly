@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import Hero from "./Hero";
 import { motion, Variants } from "framer-motion";
@@ -11,12 +10,6 @@ export default function HomePage({
 }: {
   categories: { id: string; name: string; icon: string }[];
 }) {
-  const router = useRouter();
-
-  const handleCategoryClick = (categoryId: string) => {
-    router.push(`/artists?category=${categoryId}`);
-  };
-
   const containerVariants: Variants = {
     hidden: {},
     visible: {
@@ -63,7 +56,7 @@ export default function HomePage({
               whileTap={{ scale: 0.98 }}
             >
               <Card
-                onClick={() => handleCategoryClick(category.name)}
+                // onClick={() => handleCategoryClick(category.name)}
                 className="flex flex-col items-center justify-center w-full h-56 p-4 transition cursor-pointer hover:shadow-md dark:hover:shadow-purple-900 hover:border-purple-500"
               >
                 <CardContent className="flex flex-col items-center justify-center space-y-2">

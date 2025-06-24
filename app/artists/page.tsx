@@ -5,16 +5,12 @@ import { getArtists } from "@/lib/api";
 import { Artist } from "@/types";
 import ArtistCard from "@/components/cards/ArtistCard";
 import Filter from "@/components/Filter";
-import { useSearchParams } from "next/navigation";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 
 export default function ArtistsPage() {
-  const searchParams = useSearchParams();
-  const initialCategory = searchParams.get("category") || "";
-  const updatedCategory = initialCategory.slice(0, -1);
   const [artists, setArtists] = useState<Artist[]>([]);
-  const [category, setCategory] = useState(updatedCategory);
+  const [category, setCategory] = useState("");
   const [location, setLocation] = useState("");
   const [feeRange, setFeeRange] = useState("");
   const [isLoading, setIsLoading] = useState(true);

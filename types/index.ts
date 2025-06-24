@@ -1,3 +1,5 @@
+import { FieldValues, Path, UseFormRegister } from "react-hook-form";
+
 export interface Artist {
   id: string;
   name: string;
@@ -9,6 +11,13 @@ export interface Artist {
   bio: string;
 }
 
+export interface FieldComponentProps<T extends FieldValues> {
+  label: string;
+  name: Path<T>;
+  register: UseFormRegister<T>;
+  error?: string;
+  options?: string[];
+}
 export interface Booking {
   id: string;
   artistId: string;

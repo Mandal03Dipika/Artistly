@@ -1,8 +1,8 @@
 "use client";
 
+import { z } from "zod";
 import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useEffect, useState } from "react";
 import TextInput from "@/components/forms/TextInput";
 import TextArea from "@/components/forms/TextArea";
@@ -14,25 +14,25 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
-import { InferType } from "yup";
+import { FieldComponentProps } from "@/types";
 
-const schema = yup.object().shape({
-  name: yup.string().required("Name is required"),
-  bio: yup.string().required("Bio is required"),
-  category: yup.array().min(1, "Select at least one category"),
-  languages: yup.array().min(1, "Select at least one language"),
-  feeRange: yup.string().required("Fee range is required"),
-  location: yup.string().required("Location is required"),
-  profileImage: yup.mixed().notRequired(),
+const schema = z.object({
+  name: z.string().min(1, "Name is required"),
+  bio: z.string().min(1, "Bio is required"),
+  category: z.array(z.string()).min(1, "Select at least one category"),
+  languages: z.array(z.string()).min(1, "Select at least one language"),
+  feeRange: z.string().min(1, "Fee range is required"),
+  location: z.string().min(1, "Location is required"),
+  profileImage: z.any().optional(),
 });
 
-type FormData = InferType<typeof schema>;
+type FormData = z.infer<typeof schema>;
 
 interface FormField {
   type: string;
-  component: React.ComponentType<any>;
+  component: React.ComponentType<FieldComponentProps<FormData>>;
   label: string;
-  name: string;
+  name: keyof FormData;
   options?: string[];
   error?: string;
 }
@@ -44,12 +44,11 @@ export default function OnboardingForm() {
     reset,
     formState: { errors },
   } = useForm<FormData>({
-    resolver: yupResolver(schema) as any,
+    resolver: zodResolver(schema),
   });
 
   const [submitted, setSubmitted] = useState(false);
   const { categoryOptions, languageOptions, feeOptions } = useOptions();
-
   const [isClient, setIsClient] = useState(false);
   useEffect(() => setIsClient(true), []);
 
@@ -107,7 +106,7 @@ export default function OnboardingForm() {
     },
   ];
 
-  if (!isClient) return null; // Prevent SSR mismatch
+  if (!isClient) return null;
 
   return (
     <motion.div
@@ -128,14 +127,11 @@ export default function OnboardingForm() {
             className="space-y-6"
             initial="hidden"
             animate="visible"
-            variants={{
-              hidden: {},
-              visible: { transition: { staggerChildren: 0.1 } },
-            }}
+            variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
           >
             {formConfig.map(({ component: Component, ...field }) => (
               <motion.div
-                key={field.name}
+                key={field.name as string}
                 variants={{
                   hidden: { opacity: 0, y: 10 },
                   visible: { opacity: 1, y: 0 },
@@ -152,11 +148,11 @@ export default function OnboardingForm() {
             ))}
 
             <motion.div
+              className="space-y-2"
               variants={{
                 hidden: { opacity: 0, y: 10 },
                 visible: { opacity: 1, y: 0 },
               }}
-              className="space-y-2"
             >
               <Label htmlFor="profileImage">Profile Image (optional)</Label>
               <Input
