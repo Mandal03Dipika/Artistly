@@ -10,18 +10,20 @@ import {
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { motion, AnimatePresence } from "framer-motion";
+import { Artist } from "@/types";
+interface EditDialogProps {
+  showEditModal: boolean;
+  setShowEditModal: (value: boolean) => void;
+  artistToEdit: Artist | null;
+  setArtistToEdit: (artist: Artist) => void;
+}
 
 const EditDialog = ({
   showEditModal,
   setShowEditModal,
   artistToEdit,
   setArtistToEdit,
-}: {
-  showEditModal: boolean;
-  setShowEditModal: (value: boolean) => void;
-  artistToEdit: any;
-  setArtistToEdit: (artist: any) => void;
-}) => {
+}: EditDialogProps) => {
   const handleEditSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Updated artist:", artistToEdit);
@@ -64,7 +66,6 @@ const EditDialog = ({
                   },
                 }}
               >
-                {/* Name */}
                 <motion.div
                   variants={{
                     hidden: { opacity: 0, y: 10 },
@@ -82,16 +83,14 @@ const EditDialog = ({
                     id="name"
                     value={artistToEdit?.name || ""}
                     onChange={(e) =>
-                      setArtistToEdit((prev: any) => ({
-                        ...prev,
+                      setArtistToEdit({
+                        ...(artistToEdit as Artist),
                         name: e.target.value,
-                      }))
+                      })
                     }
                     placeholder="Enter artist name"
                   />
                 </motion.div>
-
-                {/* Location */}
                 <motion.div
                   variants={{
                     hidden: { opacity: 0, y: 10 },
@@ -109,16 +108,14 @@ const EditDialog = ({
                     id="location"
                     value={artistToEdit?.location || ""}
                     onChange={(e) =>
-                      setArtistToEdit((prev: any) => ({
-                        ...prev,
+                      setArtistToEdit({
+                        ...(artistToEdit as Artist),
                         location: e.target.value,
-                      }))
+                      })
                     }
                     placeholder="Enter location"
                   />
                 </motion.div>
-
-                {/* Fee */}
                 <motion.div
                   variants={{
                     hidden: { opacity: 0, y: 10 },
@@ -136,16 +133,14 @@ const EditDialog = ({
                     id="fee"
                     value={artistToEdit?.feeRange || ""}
                     onChange={(e) =>
-                      setArtistToEdit((prev: any) => ({
-                        ...prev,
+                      setArtistToEdit({
+                        ...(artistToEdit as Artist),
                         feeRange: e.target.value,
-                      }))
+                      })
                     }
                     placeholder="Enter fee range"
                   />
                 </motion.div>
-
-                {/* Submit Button */}
                 <motion.div
                   variants={{
                     hidden: { opacity: 0, y: 10 },

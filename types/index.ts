@@ -6,6 +6,7 @@ export interface Artist {
   feeRange: string;
   location: string;
   profileImage: string;
+  bio: string;
 }
 
 export interface Booking {

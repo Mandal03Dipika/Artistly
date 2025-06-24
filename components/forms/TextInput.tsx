@@ -1,15 +1,20 @@
-import { UseFormRegister } from "react-hook-form";
+import { UseFormRegister, FieldValues, Path } from "react-hook-form";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
-interface TextInputProps {
+interface TextInputProps<T extends FieldValues> {
   label: string;
-  name: string;
-  register: UseFormRegister<any>;
+  name: Path<T>;
+  register: UseFormRegister<T>;
   error?: string;
 }
 
-const TextInput = ({ label, name, register, error }: TextInputProps) => {
+const TextInput = <T extends FieldValues>({
+  label,
+  name,
+  register,
+  error,
+}: TextInputProps<T>) => {
   return (
     <div className="space-y-2">
       <Label htmlFor={name}>{label}</Label>

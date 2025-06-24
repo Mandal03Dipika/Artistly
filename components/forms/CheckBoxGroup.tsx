@@ -1,25 +1,25 @@
-import { UseFormRegister } from "react-hook-form";
+import { UseFormRegister, FieldValues, Path } from "react-hook-form";
 
-interface CheckboxGroupProps {
+interface CheckboxGroupProps<T extends FieldValues> {
   label: string;
-  name: string;
+  name: Path<T>;
   options: string[];
-  register: UseFormRegister<any>;
+  register: UseFormRegister<T>;
   error?: string;
 }
 
-const CheckboxGroup = ({
+const CheckBoxGroup = <T extends FieldValues>({
   label,
   name,
   options = [],
   register,
   error,
-}: CheckboxGroupProps) => {
+}: CheckboxGroupProps<T>) => {
   return (
     <div>
       <label className="block mb-1 font-medium">{label}</label>
       {options.map((option) => (
-        <label key={String(option)} className="block">
+        <label key={option} className="block">
           <input
             type="checkbox"
             value={option}
@@ -34,4 +34,4 @@ const CheckboxGroup = ({
   );
 };
 
-export default CheckboxGroup;
+export default CheckBoxGroup;

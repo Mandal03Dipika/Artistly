@@ -13,6 +13,7 @@ import {
 import DeleteDialog from "./DeleteDialog";
 import EditDialog from "./EditDialog";
 import { motion, AnimatePresence } from "framer-motion";
+import { Artist } from "@/types";
 
 const tableContainerVariants = {
   hidden: { opacity: 0, y: 10 },
@@ -32,13 +33,15 @@ const rowVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
+interface ArtistsTableProps {
+  setSelectedArtist: (artist: Artist) => void;
+  currentArtists: Artist[];
+}
+
 const ArtistsTable = ({
   setSelectedArtist,
   currentArtists,
-}: {
-  setSelectedArtist: (artist: any) => void;
-  currentArtists: any[];
-}) => {
+}: ArtistsTableProps) => {
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [artistToDelete, setArtistToDelete] = useState<any | null>(null);
   const [showEditModal, setShowEditModal] = useState(false);

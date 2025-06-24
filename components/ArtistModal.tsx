@@ -9,14 +9,17 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import { Artist } from "@/types";
+
+interface ArtistModalProps {
+  setSelectedArtist: (artist: null) => void;
+  selectedArtist: Artist | null;
+}
 
 const ArtistModal = ({
   setSelectedArtist,
   selectedArtist,
-}: {
-  setSelectedArtist: (artist: null) => void;
-  selectedArtist: any;
-}) => {
+}: ArtistModalProps) => {
   const isOpen = Boolean(selectedArtist);
 
   return (

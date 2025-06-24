@@ -10,13 +10,20 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { Artist } from "@/types";
 import { motion, AnimatePresence } from "framer-motion";
+
+interface DeleteDialogProps {
+  showDeleteDialog: boolean;
+  setShowDeleteDialog: (open: boolean) => void;
+  artistToDelete: Artist | null;
+}
 
 const DeleteDialog = ({
   showDeleteDialog,
   setShowDeleteDialog,
   artistToDelete,
-}: any) => {
+}: DeleteDialogProps) => {
   const handleDelete = () => {
     console.log("Deleting artist:", artistToDelete?.id);
     setShowDeleteDialog(false);

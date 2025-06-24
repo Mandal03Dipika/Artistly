@@ -14,6 +14,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
+import { InferType } from "yup";
 
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
@@ -24,6 +25,8 @@ const schema = yup.object().shape({
   location: yup.string().required("Location is required"),
   profileImage: yup.mixed().notRequired(),
 });
+
+type FormData = InferType<typeof schema>;
 
 interface FormField {
   type: string;
@@ -40,14 +43,14 @@ export default function OnboardingForm() {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm({
-    resolver: yupResolver(schema),
+  } = useForm<FormData>({
+    resolver: yupResolver(schema) as any,
   });
 
   const [submitted, setSubmitted] = useState(false);
   const { categoryOptions, languageOptions, feeOptions } = useOptions();
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: FormData) => {
     console.log("Submitted data:", data);
     setSubmitted(true);
     reset();
